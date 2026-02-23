@@ -1,25 +1,29 @@
-// Ejemplo de variables simples
+// Ejemplo de variables simples con diferentes tipos de datos
 var nameu = "Sergio Homero";
 var age = 20;
 var isEnrolled = true;
 var subjects = ["Programación", "Base de Datos", "Diseño"];
 // Accedemos a la información
 console.log(typeof (nameu)); // Muestra "string"
-console.log(typeof (age));
-console.log(typeof (isEnrolled));
-console.log(typeof (subjects));
+console.log(typeof (age)); // Muestra "number"
+console.log(typeof (isEnrolled)); // Muestra "boolean"
+console.log(typeof (subjects)); // Muestra "object"
 console.log(Array.isArray(subjects)); // true
 console.log(subjects.map(function (s) { return typeof (s); })); // Muestra "string" para cada materia
-subjects.forEach(function (element) {
+subjects.forEach(function (element) { // Recorremos el array de materias
     console.log(element);
 });
-// Ahora, vamos a crear un objeto que agrupe toda esta información
+
+// objeto que agrupe toda esta información, diferencia entre variables simples y objetos
 var estudiante = {
     "name": "Sergio Homero",
     "age": 20,
     "isEnrolled": true,
     "subjects": ["Programación", "Base de Datos", "Diseño"]
 };
+
+
+
 console.log(typeof (estudiante)); // Muestra "object"
 // Accedemos a los datos específicos del objeto
 console.log("El nombre es:", estudiante.name);

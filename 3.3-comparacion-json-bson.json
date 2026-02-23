@@ -1,4 +1,5 @@
 {
+    
     "ejemplo_json":{
         "descripcion": "Ejemplo de un documento JSON con varios tipos de datos y estructuras anidadas",
         "datos": {
@@ -39,5 +40,28 @@
                 }
             ]
         }
+    },
+    
+  "diferencias_json_vs_bson": {
+    "json": {
+      "formato": "Texto plano legible",
+      "tipos": "6 tipos básicos (String, Number, Object, Array, Boolean, Null)",
+      "tamaño": "Más grande (texto)",
+      "velocidad": "Más lento de parsear",
+      "uso": "Intercambio de datos, APIs REST, configuración"
+    },
+    "bson": {
+      "formato": "Binario (no legible directamente)",
+      "tipos": "Más de 20 tipos (Date, ObjectId, Int32, Int64, Binary, Timestamp, etc.)",
+      "tamaño": "Más compacto (binario)",
+      "velocidad": "Más rápido de parsear y procesar",
+      "uso": "MongoDB, almacenamiento interno de documentos"
+    },
+    "ejemplo_conversion": {
+      "json_fecha": "2026-02-16",
+      "bson_fecha_seria": "ISODate('2026-02-16T00:00:00Z')",
+      "json_id": "507f1f77bcf86cd799439011",
+      "bson_id_seria": "ObjectId('507f1f77bcf86cd799439011')"
     }
+  }
 }

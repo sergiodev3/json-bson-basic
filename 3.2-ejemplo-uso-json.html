@@ -57,19 +57,19 @@
     </style>
 </head>
 <body>
-    <h1>📊 Demostración de JSON - ¿Para qué sirve?</h1>
+    <h1>Demostración de JSON - ¿Para qué sirve?</h1>
     
     <div class="container">
         <!-- Panel izquierdo: JSON crudo -->
         <div class="panel">
-            <h2>🔤 JSON (Texto)</h2>
+            <h2>JSON (Texto)</h2>
             <p>Así se ve el JSON como texto plano:</p>
             <pre id="jsonRaw"></pre>
         </div>
 
         <!-- Panel derecho: Datos extraídos -->
         <div class="panel">
-            <h2>✨ Datos Utilizables</h2>
+            <h2>Datos Utilizables</h2>
             <p>Así usamos los datos del JSON en nuestra aplicación:</p>
             <div id="datosExtraidos"></div>
         </div>
@@ -106,32 +106,32 @@
         // Crear HTML con los datos extraídos
         datosDiv.innerHTML = `
             <div class="datos-item">
-                <span class="label">👤 Nombre:</span>
+                <span class="label">Nombre:</span>
                 <span class="value">${datos.nombre}</span>
             </div>
             <div class="datos-item">
-                <span class="label">🎂 Edad:</span>
+                <span class="label">Edad:</span>
                 <span class="value">${datos.edad} años</span>
             </div>
             <div class="datos-item">
-                <span class="label">✅ Estado:</span>
+                <span class="label">Estado:</span>
                 <span class="value">${datos.activo ? 'Activo' : 'Inactivo'}</span>
             </div>
             <div class="datos-item">
-                <span class="label">🎯 Hobbies:</span>
+                <span class="label">Hobbies:</span>
                 <span class="value">${datos.hobbies.join(', ')}</span>
             </div>
             <div class="datos-item">
-                <span class="label">📍 Dirección:</span>
+                <span class="label">Dirección:</span>
                 <span class="value">${datos.direccion.calle}, ${datos.direccion.ciudad}, ${datos.direccion.pais}</span>
             </div>
             <div class="datos-item">
-                <span class="label">📞 Contacto:</span>
+                <span class="label">Contacto:</span>
                 <span class="value">${datos.contacto || 'No disponible'}</span>
             </div>
         `;
 
-        console.log('💡 UTILIDAD DE JSON:');
+        console.log('UTILIDAD DE JSON:');
         console.log('1. Formato de texto ligero para intercambiar datos');
         console.log('2. Fácil de leer por humanos y máquinas');
         console.log('3. Compatible con todos los lenguajes de programación');

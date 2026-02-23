@@ -1,4 +1,5 @@
-// 1. Definimos el objeto "jugador"
+// Ejericio: Crear un objeto JSON para representar un objeto del mundo real
+// como un jugador de videojuegos, con propiedades 
 // Nota: Usamos comillas en las claves para acostumbrarnos a JSON/MongoDB
 const jugador = {
     "nickname": "ProGamer99",
